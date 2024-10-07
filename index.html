@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Nuraina</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nuraina</div>
+      <ul class="nav-links">
+        <li><a href="#tentang-saya">Tentang Saya</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#kontak-saya">Kontak Saya</a></li>
+      </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Nuraina</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#tentang-saya" onclick="toggleMenu()">Tentang Saya</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+          <li><a href="#kontak-saya" onclick="toggleMenu()">Kontak Saya</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/ina.jpeg" alt="Foto profil Nuraina" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Halo, nama saya</p>
+        <h1 class="title">Nuraina</h1>
+        <p class="section__text__p2">Saya berasal dari Nusa Tenggara Timur</p>
+        <div class="btn-container">
+          <!-- Tombol-tombol bisa ditambahkan di sini jika diperlukan -->
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang-saya">
+      <h1 class="title">Tentang Saya</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/ayutokan.jpeg" alt="Foto Nuraina" class="tentang-pic" />
+        </div>
+        <div class="tentang-details-container">
+          <div class="text-container">
+            <p>
+              Saya adalah mahasiswa Teknik Informatika di Universitas Pamulang. Dalam pendidikan, saya bukanlah anak yang pintar,
+              namun saya bermodalkan semangat dan kerajinan di kampus. Walaupun selama ini kurang berprestasi, saya akan terus 
+              berusaha demi kedua orang tua saya.Hobi saya bermain badminton dan game. Di waktu luang, saya senang menonton film atau drama Korea.
+            </p>
+            <p>
+              Saya berasal dari pulau Nusa Tenggara Timur, desa Redontena, kecamatan Kelubagolit, kabupaten Flores Timur.
+              Meskipun demikian, saya lahir di Malaysia dan tumbuh besar di sana.
+            </p>
+            <p>
+              Hingga saat ini saya berada di tahap tengah perjalanan dan perjuangan saya di dunia perkuliahan yang jauh dari kedua orang tua saya.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Ikon panah" class="icon arrow" onclick="location.href='./#skill'" />
+    </section>
+
+    <section id="skill">
+      <p class="section__text__p1">Kemampuan Saya</p>
+      <h1 class="title">Skill</h1>
+      <div class="skill-details-container">
+        <div class="details-container">
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Ikon skill" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Ikon skill" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Ikon skill" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Ikon skill" class="icon" />
+              <div>
+                <h3>JAVA</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Ikon skill" class="icon" />
+              <div>
+                <h3>PYTHON</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="kontak-saya">
+      <p class="section__text__p1">Hubungi Saya</p>
+      <h1 class="title">Kontak Saya</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Ikon email" class="icon contact-icon email-icon" />
+          <p><a href="mailto:nurainirusdy4@gmail.com">nurainirusdy4@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="Ikon LinkedIn" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#tentang-saya">Tentang Saya</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#kontak-saya">Kontak</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &#169; 2023 Nuraina. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
